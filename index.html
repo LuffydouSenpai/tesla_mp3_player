@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tesla mp3 player</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="./assets/js/hammer.min.js"></script>
+    <script src="./assets/js/script.js" type="module" defer></script>
+
+</head>
+
+<body>
+    <div class="player">
+        <div class="numMusique">PLAYING x OF y</div>
+        <div class="slider"></div>
+        <div class="title">Track Name</div>
+        <div class="description">Description</div>
+        <div class="nav">
+            <div class="prev">
+                <i class="fa fa-step-backward fa-2x"></i>
+            </div>
+            <div class="playPause">
+                <i class="fa fa-play-circle fa-5x"></i>
+            </div>
+
+            <div class="next">
+                <i class="fa fa-step-forward fa-2x"></i>
+            </div>
+        </div>
+        <div class="time">
+            <div class="current-time">00:00</div>
+            <input type="range" min="1" max="100" value="0" class="seek_slider">
+            <div class="total-duration">00:00</div>
+        </div>
+        <div class="info">Artiste : NomArtiste / Genre : GenreMusique / Année : AnneeMusique</div>
+        <div class="navVolume">
+            <i class="fa fa-volume-down"></i>
+            <input type="range" min="1" max="100" value="99" class="volume_slider">
+            <i class="fa fa-volume-up"></i>
+        </div>
+    </div>
+</body>
+
+</html>
